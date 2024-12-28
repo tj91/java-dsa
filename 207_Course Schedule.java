@@ -1,8 +1,9 @@
+/*
 - Detect cycle in a graph
   - Use DFS
+*/
 
-```
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
+public boolean canFinish(int numCourses, int[][] prerequisites) {
 
         int n = numCourses;
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
@@ -28,7 +29,7 @@
         return true;
     }
 
-    boolean dfs(ArrayList<ArrayList<Integer>> adj, int i, boolean[] visited, boolean[] recStack) {
+  boolean dfs(ArrayList<ArrayList<Integer>> adj, int i, boolean[] visited, boolean[] recStack) {
 
         if (recStack[i]) {
             return true;
@@ -50,5 +51,5 @@
 
         recStack[i] = false;
         return false;
-    }
-```
+  }
+
