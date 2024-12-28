@@ -1,10 +1,10 @@
-Approach
-- Detect cycle in graph
-  - DFS with topological sort
+/* Approach
+ - Detect cycle in graph
+   - DFS with topological sort
+*/
 
-```
-class Solution {
-    public int[] findOrder(int numCourses, int[][] prerequisites) {
+
+  public int[] findOrder(int numCourses, int[][] prerequisites) {
 
         int n = numCourses;
 
@@ -69,5 +69,3 @@ class Solution {
         recStack[i] = false;
         return false;
     }
-}
-```
