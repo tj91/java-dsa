@@ -1,9 +1,9 @@
-/* Approach
+Approach
  - Detect cycle in graph
    - DFS with topological sort
-*/
 
 
+```java
   public int[] findOrder(int numCourses, int[][] prerequisites) {
 
         int n = numCourses;
@@ -69,3 +69,4 @@
         recStack[i] = false;
         return false;
     }
+```

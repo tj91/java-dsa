@@ -1,8 +1,8 @@
-/*
+
 - Detect cycle in a graph
   - Use DFS
-*/
 
+```java
 public boolean canFinish(int numCourses, int[][] prerequisites) {
 
         int n = numCourses;
@@ -52,4 +52,4 @@ public boolean canFinish(int numCourses, int[][] prerequisites) {
         recStack[i] = false;
         return false;
   }
-
+```
