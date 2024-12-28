@@ -65,7 +65,7 @@ class Solution {
             }
         }
 
-        res.add(i);
+        res.add(i); // we add the vertex once done with all the neighbors
         recStack[i] = false;
         return false;
     }
